@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* LazyLoadingDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LazyLoadingDemoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1F535592175B1EF000E0135C /* AppRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F53558D175B1EF000E0135C /* AppRecord.m */; };
+		1F535593175B1EF000E0135C /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F53558F175B1EF000E0135C /* IconDownloader.m */; };
+		1F535594175B1EF000E0135C /* ParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F535591175B1EF000E0135C /* ParseOperation.m */; };
+		1F535599175B208D00E0135C /* LazyLoadingDemoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F535597175B208D00E0135C /* LazyLoadingDemoViewCell.xib */; };
+		1F53559C175B312A00E0135C /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F53559A175B312A00E0135C /* Placeholder.png */; };
+		1F53559D175B312A00E0135C /* Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F53559B175B312A00E0135C /* Placeholder@2x.png */; };
+		1F53559F175B57BD00E0135C /* Storyboard_phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F53559E175B57BC00E0135C /* Storyboard_phone.storyboard */; };
+		1F5355A1175B57D100E0135C /* Storyboard_pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5355A0175B57D100E0135C /* Storyboard_pad.storyboard */; };
+		1F5355A4175B669600E0135C /* LazyLoadingDemoFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5355A3175B669500E0135C /* LazyLoadingDemoFooterView.m */; };
+		1F5355A7175B66A600E0135C /* LazyLoadingDemoViewCellLoading_phone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5355A5175B66A500E0135C /* LazyLoadingDemoViewCellLoading_phone.xib */; };
+		1F5355A8175B66A600E0135C /* LazyLoadingDemoViewCellLoading_pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5355A6175B66A500E0135C /* LazyLoadingDemoViewCellLoading_pad.xib */; };
+		1F8AA104175B8AC8007A2337 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AA103175B8AC8007A2337 /* Default-568h@2x.png */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28D7ACF80DDB3853001CB0EB /* LazyLoadingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LazyLoadingDemoViewController.m */; };
+		38417CA011D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 38417C9F11D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		3897830C117A678C00D5CC8F /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 389782FD117A678C00D5CC8F /* AQGridView.m */; };
+		3897830D117A678C00D5CC8F /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38978301117A678C00D5CC8F /* AQGridViewCell.m */; };
+		3897830E117A678C00D5CC8F /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38978303117A678C00D5CC8F /* AQGridViewController.m */; };
+		3897830F117A678C00D5CC8F /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 38978305117A678C00D5CC8F /* AQGridViewData.m */; };
+		38978310117A678C00D5CC8F /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 38978307117A678C00D5CC8F /* AQGridViewUpdateInfo.m */; };
+		38978311117A678C00D5CC8F /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 38978309117A678C00D5CC8F /* AQGridViewUpdateItem.m */; };
+		38978312117A678C00D5CC8F /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897830B117A678C00D5CC8F /* UIColor+AQGridView.m */; };
+		38978408117A787900D5CC8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38978407117A787900D5CC8F /* QuartzCore.framework */; };
+		389785C3117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = 389785C2117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.m */; };
+		38A6A0CD11DA5EC7005A3A29 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A6A0CC11DA5EC7005A3A29 /* AQGridViewAnimatorItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* LazyLoadingDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyLoadingDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* LazyLoadingDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyLoadingDemoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* LazyLoadingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyLoadingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F53558C175B1EF000E0135C /* AppRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRecord.h; sourceTree = "<group>"; };
+		1F53558D175B1EF000E0135C /* AppRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecord.m; sourceTree = "<group>"; };
+		1F53558E175B1EF000E0135C /* IconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconDownloader.h; sourceTree = "<group>"; };
+		1F53558F175B1EF000E0135C /* IconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconDownloader.m; sourceTree = "<group>"; };
+		1F535590175B1EF000E0135C /* ParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseOperation.h; sourceTree = "<group>"; };
+		1F535591175B1EF000E0135C /* ParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseOperation.m; sourceTree = "<group>"; };
+		1F535597175B208D00E0135C /* LazyLoadingDemoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyLoadingDemoViewCell.xib; sourceTree = "<group>"; };
+		1F53559A175B312A00E0135C /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		1F53559B175B312A00E0135C /* Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Placeholder@2x.png"; sourceTree = "<group>"; };
+		1F53559E175B57BC00E0135C /* Storyboard_phone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_phone.storyboard; sourceTree = "<group>"; };
+		1F5355A0175B57D100E0135C /* Storyboard_pad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_pad.storyboard; sourceTree = "<group>"; };
+		1F5355A2175B669500E0135C /* LazyLoadingDemoFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyLoadingDemoFooterView.h; sourceTree = "<group>"; };
+		1F5355A3175B669500E0135C /* LazyLoadingDemoFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyLoadingDemoFooterView.m; sourceTree = "<group>"; };
+		1F5355A5175B66A500E0135C /* LazyLoadingDemoViewCellLoading_phone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyLoadingDemoViewCellLoading_phone.xib; sourceTree = "<group>"; };
+		1F5355A6175B66A500E0135C /* LazyLoadingDemoViewCellLoading_pad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyLoadingDemoViewCellLoading_pad.xib; sourceTree = "<group>"; };
+		1F8AA103175B8AC8007A2337 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28D7ACF60DDB3853001CB0EB /* LazyLoadingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyLoadingDemoViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* LazyLoadingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyLoadingDemoViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* LazyLoadingDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyLoadingDemo_Prefix.pch; sourceTree = "<group>"; };
+		38417C9E11D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		38417C9F11D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		389782FA117A678C00D5CC8F /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		389782FB117A678C00D5CC8F /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		389782FC117A678C00D5CC8F /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		389782FD117A678C00D5CC8F /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		389782FF117A678C00D5CC8F /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		38978300117A678C00D5CC8F /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		38978301117A678C00D5CC8F /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		38978302117A678C00D5CC8F /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		38978303117A678C00D5CC8F /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		38978304117A678C00D5CC8F /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		38978305117A678C00D5CC8F /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		38978306117A678C00D5CC8F /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		38978307117A678C00D5CC8F /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		38978308117A678C00D5CC8F /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		38978309117A678C00D5CC8F /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		3897830A117A678C00D5CC8F /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		3897830B117A678C00D5CC8F /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		38978407117A787900D5CC8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		389785C1117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		389785C2117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		38A6A0CB11DA5EC7005A3A29 /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		38A6A0CC11DA5EC7005A3A29 /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LazyLoadingDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LazyLoadingDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				38978408117A787900D5CC8F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* LazyLoadingDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* LazyLoadingDemoAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* LazyLoadingDemoViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* LazyLoadingDemoViewController.m */,
+				1F535597175B208D00E0135C /* LazyLoadingDemoViewCell.xib */,
+				1F5355A2175B669500E0135C /* LazyLoadingDemoFooterView.h */,
+				1F5355A3175B669500E0135C /* LazyLoadingDemoFooterView.m */,
+				1F5355A5175B66A500E0135C /* LazyLoadingDemoViewCellLoading_phone.xib */,
+				1F5355A6175B66A500E0135C /* LazyLoadingDemoViewCellLoading_pad.xib */,
+				1F53558B175B1EEF00E0135C /* IconDownloader */,
+				389782F9117A678C00D5CC8F /* GridView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* LazyLoadingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F53558B175B1EEF00E0135C /* IconDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				1F53558C175B1EF000E0135C /* AppRecord.h */,
+				1F53558D175B1EF000E0135C /* AppRecord.m */,
+				1F53558E175B1EF000E0135C /* IconDownloader.h */,
+				1F53558F175B1EF000E0135C /* IconDownloader.m */,
+				1F535590175B1EF000E0135C /* ParseOperation.h */,
+				1F535591175B1EF000E0135C /* ParseOperation.m */,
+			);
+			path = IconDownloader;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1F8AA103175B8AC8007A2337 /* Default-568h@2x.png */,
+				1F5355A0175B57D100E0135C /* Storyboard_pad.storyboard */,
+				1F53559E175B57BC00E0135C /* Storyboard_phone.storyboard */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* LazyLoadingDemo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* LazyLoadingDemo-Info.plist */,
+				1F53559A175B312A00E0135C /* Placeholder.png */,
+				1F53559B175B312A00E0135C /* Placeholder@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				38978407117A787900D5CC8F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		389782F9117A678C00D5CC8F /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				389782FA117A678C00D5CC8F /* AQGridView+CellLayout.h */,
+				389782FB117A678C00D5CC8F /* AQGridView+CellLocationDelegation.h */,
+				389782FC117A678C00D5CC8F /* AQGridView.h */,
+				389782FD117A678C00D5CC8F /* AQGridView.m */,
+				389782FF117A678C00D5CC8F /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				38978300117A678C00D5CC8F /* AQGridViewCell.h */,
+				38978301117A678C00D5CC8F /* AQGridViewCell.m */,
+				38978302117A678C00D5CC8F /* AQGridViewController.h */,
+				38978303117A678C00D5CC8F /* AQGridViewController.m */,
+				38978304117A678C00D5CC8F /* AQGridViewData.h */,
+				38978305117A678C00D5CC8F /* AQGridViewData.m */,
+				38978306117A678C00D5CC8F /* AQGridViewUpdateInfo.h */,
+				38978307117A678C00D5CC8F /* AQGridViewUpdateInfo.m */,
+				38978308117A678C00D5CC8F /* AQGridViewUpdateItem.h */,
+				38978309117A678C00D5CC8F /* AQGridViewUpdateItem.m */,
+				38A6A0CB11DA5EC7005A3A29 /* AQGridViewAnimatorItem.h */,
+				38A6A0CC11DA5EC7005A3A29 /* AQGridViewAnimatorItem.m */,
+				3897830A117A678C00D5CC8F /* UIColor+AQGridView.h */,
+				3897830B117A678C00D5CC8F /* UIColor+AQGridView.m */,
+				389785C1117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.h */,
+				389785C2117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.m */,
+				38417C9E11D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.h */,
+				38417C9F11D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.m */,
+			);
+			name = GridView;
+			path = ../../../Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* LazyLoadingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LazyLoadingDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazyLoadingDemo;
+			productName = ImageDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* LazyLoadingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LazyLoadingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* LazyLoadingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F535599175B208D00E0135C /* LazyLoadingDemoViewCell.xib in Resources */,
+				1F53559C175B312A00E0135C /* Placeholder.png in Resources */,
+				1F53559D175B312A00E0135C /* Placeholder@2x.png in Resources */,
+				1F53559F175B57BD00E0135C /* Storyboard_phone.storyboard in Resources */,
+				1F5355A1175B57D100E0135C /* Storyboard_pad.storyboard in Resources */,
+				1F5355A7175B66A600E0135C /* LazyLoadingDemoViewCellLoading_phone.xib in Resources */,
+				1F5355A8175B66A600E0135C /* LazyLoadingDemoViewCellLoading_pad.xib in Resources */,
+				1F8AA104175B8AC8007A2337 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* LazyLoadingDemoAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* LazyLoadingDemoViewController.m in Sources */,
+				3897830C117A678C00D5CC8F /* AQGridView.m in Sources */,
+				3897830D117A678C00D5CC8F /* AQGridViewCell.m in Sources */,
+				3897830E117A678C00D5CC8F /* AQGridViewController.m in Sources */,
+				3897830F117A678C00D5CC8F /* AQGridViewData.m in Sources */,
+				38978310117A678C00D5CC8F /* AQGridViewUpdateInfo.m in Sources */,
+				38978311117A678C00D5CC8F /* AQGridViewUpdateItem.m in Sources */,
+				38978312117A678C00D5CC8F /* UIColor+AQGridView.m in Sources */,
+				389785C3117AB50300D5CC8F /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				38417CA011D1923400EFB0FB /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				38A6A0CD11DA5EC7005A3A29 /* AQGridViewAnimatorItem.m in Sources */,
+				1F535592175B1EF000E0135C /* AppRecord.m in Sources */,
+				1F535593175B1EF000E0135C /* IconDownloader.m in Sources */,
+				1F535594175B1EF000E0135C /* ParseOperation.m in Sources */,
+				1F5355A4175B669600E0135C /* LazyLoadingDemoFooterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LazyLoadingDemo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "LazyLoadingDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = LazyLoadingDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LazyLoadingDemo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "LazyLoadingDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = LazyLoadingDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LazyLoadingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LazyLoadingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

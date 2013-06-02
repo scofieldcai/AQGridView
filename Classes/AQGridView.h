@@ -241,6 +241,7 @@ extern NSString * const AQGridViewSelectionDidChangeNotification;
 
 @property (nonatomic, retain) UIView * gridHeaderView;
 @property (nonatomic, retain) UIView * gridFooterView;
+@property (nonatomic, assign) BOOL flexibleFooterView;
 
 @property (nonatomic, assign) CGFloat leftContentInset;
 @property (nonatomic, assign) CGFloat rightContentInset;

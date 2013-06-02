@@ -79,6 +79,7 @@
 // metrics used within the scroll view
 - (CGRect) rectForEntireGrid;
 - (CGSize) sizeForEntireGrid;
+- (CGSize) sizeForEntireGridFlexibleFooter;
 - (NSUInteger) numberOfItemsPerRow;
 
 - (CGRect) cellRectAtIndex: (NSUInteger) index;

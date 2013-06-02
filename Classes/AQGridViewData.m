@@ -168,6 +168,20 @@
 	return ( CGSizeMake(((CGFloat)ceilf(_actualCellSize.width * numPerRow)) + _leftPadding + _rightPadding, height) );
 }
 
+- (CGSize) sizeForEntireGridFlexibleFooter
+{
+	NSUInteger numPerRow = [self numberOfItemsPerRow];
+    if ( numPerRow == 0 )       // avoid a divide-by-zero exception
+        return ( CGSizeZero );
+	NSUInteger numRows = _numberOfItems / numPerRow;
+	if ( _numberOfItems % numPerRow != 0 )
+		numRows++;
+	
+	CGFloat height = ( ((CGFloat)ceilf((CGFloat)numRows * _actualCellSize.height)) + _topPadding + _bottomPadding );
+	
+	return ( CGSizeMake(((CGFloat)ceilf(_actualCellSize.width * numPerRow)) + _leftPadding + _rightPadding, height) );
+}
+
 - (NSUInteger) numberOfItemsPerRow
 {
 	if ( _layoutDirection == AQGridViewLayoutDirectionVertical )

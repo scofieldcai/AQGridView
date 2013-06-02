@@ -119,6 +119,8 @@ NSString * const AQGridViewSelectionDidChangeNotification = @"AQGridViewSelectio
 	_flags.allowsSelection = 1;
 	_flags.usesPagedHorizontalScrolling = NO;
 	_flags.contentSizeFillsBounds = 1;
+    
+    self.flexibleFooterView = NO;
 }
 
 - (id)initWithFrame: (CGRect) frame
@@ -507,6 +509,11 @@ NSString * const AQGridViewSelectionDidChangeNotification = @"AQGridViewSelectio
 
 - (void) setContentSize: (CGSize) newSize
 {
+    if( self.flexibleFooterView ){
+        [super setContentSize: newSize];
+        return;
+    }
+
 	if ( (_flags.contentSizeFillsBounds == 1) && (newSize.height < self.bounds.size.height) )
 		newSize.height = self.bounds.size.height;
 
@@ -626,8 +633,13 @@ NSString * const AQGridViewSelectionDidChangeNotification = @"AQGridViewSelectio
 
 	_gridData.numberOfItems = [_dataSource numberOfItemsInGridView: self];
 
-	// update our content size as appropriate
-	self.contentSize = [_gridData sizeForEntireGrid];
+    if( self.flexibleFooterView ){
+        self.contentSize = [_gridData sizeForEntireGridFlexibleFooter];
+    } else {
+        // update our content size as appropriate
+        self.contentSize = [_gridData sizeForEntireGrid];
+    }
+    NSLog(@"self.contentSize = %@",NSStringFromCGSize(self.contentSize));
 
     // fix up the visible index list
     NSUInteger cutoff = MAX(0, _gridData.numberOfItems-_visibleIndices.length);
