@@ -388,7 +388,12 @@ static NSString *const TopPaidAppsFeed =
     NSLog(@"scrollViewDidEndDragging");
     
     self.isDragging_msg = FALSE;
-    [self.gridView reloadData];
+    
+    NSIndexSet *updateCellIndex = [self.gridView visibleCellIndices];
+    if(( updateCellIndex != nil ) && ( updateCellIndex.count > 0 )){
+        NSLog(@"updateCellIndex.count = %d", updateCellIndex.count);
+        [self.gridView reloadItemsAtIndices:updateCellIndex withAnimation:AQGridViewItemAnimationNone];
+    }
 }
 
 // スクロール・ビューの動きが減速終了した。
@@ -396,7 +401,12 @@ static NSString *const TopPaidAppsFeed =
     NSLog(@"scrollViewDidEndDecelerating");
 
     self.isDecliring_msg = FALSE;
-    [self.gridView reloadData];
+    
+    NSIndexSet *updateCellIndex = [self.gridView visibleCellIndices];
+    if(( updateCellIndex != nil ) && ( updateCellIndex.count > 0 )){
+        NSLog(@"updateCellIndex.count = %d", updateCellIndex.count);
+        [self.gridView reloadItemsAtIndices:updateCellIndex withAnimation:AQGridViewItemAnimationNone];
+    }
 }
 
 //ドラッグ開始時にコール
